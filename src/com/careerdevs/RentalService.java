@@ -12,4 +12,13 @@ public class RentalService {
             this.isRented = isRented;
 
         }
+
+    @Override
+    public String toString() {
+        return "RentalService{" +
+                "make='" + make + '\'' +
+                ", model='" + model + '\'' +
+                ", isRented=" + isRented +
+                '}';
+    }
 }
