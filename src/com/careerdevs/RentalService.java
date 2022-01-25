@@ -1,24 +1,22 @@
 package com.careerdevs;
-
+import java.util.Scanner;
 public class RentalService {
-        String make;
-        String model;
-        boolean isRented;
+    public static void main(String[] args) {
+        public static void main(String[] args) {
+            System.out.println("Welcome to the Car Rental CLI.");
 
-        public RentalService(String make, String model, boolean isRented) {
+            Scanner scanner = new Scanner(System.in);
+            System.out.println("what is the make of the car?\nEnter here:");
+            String make = scanner.nextLine();
 
-            this.make = make;
-            this.model = model;
-            this.isRented = isRented;
+            System.out.println("What model is the car?\n Enter here:");
+            String model = scanner.nextLine();
 
-        }
+            System.out.println("has the car been rented?\n Enter true or false here:");
+            boolean isRented = scanner.nextBoolean();
 
-    @Override
-    public String toString() {
-        return "RentalService{" +
-                "make='" + make + '\'' +
-                ", model='" + model + '\'' +
-                ", isRented=" + isRented +
-                '}';
+            RentalService userGeneratedRental = new RentalService()
+            System.out.println(userGeneratedRental);
+
     }
 }
