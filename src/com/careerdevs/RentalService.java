@@ -1,4 +1,5 @@
 package com.careerdevs;
+
 import java.util.Scanner;
 public class RentalService {
     public static void main(String[] args) {
@@ -15,7 +16,8 @@ public class RentalService {
             System.out.println("has the car been rented?\n Enter true or false here:");
             boolean isRented = scanner.nextBoolean();
 
-            RentalService userGeneratedRental = new RentalService()
+           // Car userGeneratedRental = new Car(make,model,isRented);
+            Car userGeneratedRental = new Car(make,model);
             System.out.println(userGeneratedRental);
 
     }
