@@ -4,10 +4,10 @@ import java.util.Scanner;
 public class RentalService {
     public static void main(String[] args) {
             System.out.println("Welcome to Bill's Car Rental Program");
-    Vehicle car1 = new Vehicle("Honda", "Accord");
-    Vehicle car2 = new Vehicle("Chevy", "Cruze");
-    Vehicle car3 = new Vehicle("Toyota","Corolla");
-        System.out.println(car1.getMake());
+    Car car1 = new Car("Honda", "Accord");
+    Car car2 = new Car("Chevy", "Cruze");
+    Car car3 = new Car("Toyota","Corolla");
+        System.out.println(car1.getMake()); // test getter
     }
 }
 
