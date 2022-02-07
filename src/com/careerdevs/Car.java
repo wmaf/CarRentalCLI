@@ -3,12 +3,12 @@ package com.careerdevs;
 public class Car {
     private String make;
     private String model;
-    private boolean rented;
+    private boolean isRented;
 
     public Car (String make, String model) {
         this.make = make;
         this.model = model;
-        this.rented = false;
+        this.isRented = false;
 
     }
 
@@ -21,7 +21,7 @@ public class Car {
     }
 
     public boolean isRented() {
-        return rented;
+        return isRented;
     }
 }
 
