@@ -11,13 +11,13 @@ public class BetterRentalService {
         ArrayList<Car> availableCars = new ArrayList<>();
         ArrayList<Car> rentedCars   = new ArrayList<>();
 
-       availableCars.add(car1);
-       availableCars.add(car2);
-      rentedCars.add(car3);
+        availableCars.add(car1);
+        availableCars.add(car2);
+        rentedCars.add(car3);
 
         System.out.println("Available Cars");
         for (int i = 0; i < availableCars.size(); i++) {
-            System.out.println("("+(i+1)+")" + availableCars.get(i).getName());
+            System.out.println("("+(i+1)+")" + availableCars.get(i));
         }
 
     }
