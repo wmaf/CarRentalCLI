@@ -20,11 +20,18 @@ public class RentalService {
         //now you can >>> create an array list to store you objects.
         // Don't forget to declair the object store'
         System.out.println("Available Cars");
-        int listNumber = 1;  //Good use of a counter for sequentially numbering the list.
+        //int listNumber = 1; >>>>>Good use of a counter for sequentially numbering the list. But, it removes the index.
         for (int i = 0; i < carStor.length; i++) {
-            if (!carStor[i].isRented())  //freeken cool use of the Not operator here.
-            System.out.println( "(" + listNumber + ") "  + carStor[i].getMake()+ " " + carStor[i].getModel());
-            listNumber++;
+//            if (!carStor[i].isRented())  //freeken cool use of the Not operator here.
+//            System.out.println( "(" + listNumber + ") "  + carStor[i].getMake()+ " " + carStor[i].getModel());
+//            listNumber++;
+            String carStatus;
+          if (!carStor[i].isRented()) {
+              carStatus = "Available";
+          }else{
+              carStatus ="unavailable";
+          }
+            System.out.println( "(" + (i + 1) + ") "  + carStor[i].getMake()+ " " + carStor[i].getModel() + " "+ carStatus);
         }
     }
 }
