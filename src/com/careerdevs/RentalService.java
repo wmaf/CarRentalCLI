@@ -18,9 +18,9 @@ public class RentalService {
 
         //now you can >>> create an array list to store you objects.
         // Don't forget to declair the object store'
-
+        System.out.println("Available Cars");
         for (int i = 0; i < carStor.length; i++) {
-            System.out.println(carStor[i].getMake()+ " "+ carStor[i].getModel());
+            System.out.println( "(" + (i+1) + ") "  + carStor[i].getMake()+ " " + carStor[i].getModel());
 
         }
     }

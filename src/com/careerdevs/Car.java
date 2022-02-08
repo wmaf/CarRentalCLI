@@ -23,6 +23,10 @@ public class Car {
     public boolean isRented() {
         return isRented;
     }
+    //Setter
+    public void setRented(boolean rented) {
+        isRented = rented;
+    }
 }
 
 
