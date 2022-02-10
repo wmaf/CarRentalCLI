@@ -1,6 +1,6 @@
 package com.careerdevs;
 
-import java.util.Scanner;
+
 public class RentalService {
     public static void main(String[] args) {
             System.out.println("Welcome to Bill's Car Rental Program");
@@ -17,7 +17,7 @@ public class RentalService {
 
         car3.setRented(true);
 
-        //now you can >>> create an array list to store you objects.
+        // now you can >>> create an array list to store you objects.
         // Don't forget to declair the object store'
         System.out.println("Available Cars");
         //int listNumber = 1; >>>>>Good use of a counter for sequentially numbering the list. But, it removes the index.
