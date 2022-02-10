@@ -1,23 +1,23 @@
 package com.careerdevs;
 
 public class Car {
-    private String make;
-    private String model;
+    private String carMake;
+    private String carModel;
     private boolean isRented;
 
-    public Car (String make, String model) {
-        this.make = make;
-        this.model = model;
+    public Car (String carMake, String carModel) {
+        this.carMake = carMake;
+        this.carModel = carModel;
         this.isRented = false;
 
     }
 
-    public String getMake() {
-        return make;
+    public String getcarMake() {
+        return carMake;
     }
 
-    public String getModel() {
-        return model;
+    public String getcarModel() {
+        return carModel;
     }
 
     public boolean isRented() {

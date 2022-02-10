@@ -23,7 +23,7 @@ public class RentalService {
           }else{
               carStatus ="unavailable";
           }
-            System.out.println( "(" + (i + 1) + ") "  + carStor[i].getMake()+ " " + carStor[i].getModel() + " "+ carStatus);
+            System.out.println( "(" + (i + 1) + ") "  + carStor[i].getcarMake()+ " " + carStor[i].getcarModel() + " "+ carStatus);
         }
     }
 }
