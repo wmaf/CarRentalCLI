@@ -2,26 +2,21 @@ package com.careerdevs;
 
 public class RentalService {
     public static void main(String[] args) {
-            System.out.println("Welcome to Bill's Car Rental Program");
+      System.out.println("Welcome to Bill's Car Rental Program");
       Car[] carStor = new Car[3];
 
-    Car car1 = new Car("Honda", "Accord");
-    Car car2 = new Car("Chevy", "Cruze");
-    Car car3 = new Car("Toyota","Corolla");
-
-
+      Car car1 = new Car("Honda", "Accord");
+      Car car2 = new Car("Chevy", "Cruze");
+      Car car3 = new Car("Toyota","Corolla");
         carStor[0] = car1;
         carStor[1] = car2;
         carStor[2] = car3;
 
         car3.setRented(true);
 
-        // now you can >>> create an array list to store you objects.
-        // Don't forget to declair the object store'
         System.out.println("Available Cars");
-        //int listNumber = 1; >>>>>Good use of a counter for sequentially numbering the list. But, it removes the index.
-        for (int i = 0; i < carStor.length; i++) {
 
+        for (int i = 0; i < carStor.length; i++) {
             String carStatus;
           if (!carStor[i].isRented()) {
               carStatus = "Available";
@@ -34,6 +29,9 @@ public class RentalService {
 }
 
 //       ln #11...    System.out.println(car1.getMake()); // test getter
+//       ln #19...    now you can >>> create an array list to store you objects.
+//       ln #20...    Don't forget to declair the object store'
+//       ln #21...    int listNumber = 1; >>>>>Good use of a counter for sequentially numbering the list. But, it removes the index.
 //       ln #23...     if (!carStor[i].isRented())  //freeken cool use of the Not operator here.
 //            System.out.println( "(" + listNumber + ") "  + carStor[i].getMake()+ " " + carStor[i].getModel());
 //            listNumber++;
