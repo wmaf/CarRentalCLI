@@ -27,7 +27,7 @@ public class RentalService {
         }
     }
 }
-
+// ------------Old Code---------------
 //       ln #11...    System.out.println(car1.getMake()); // test getter
 //       ln #19...    now you can >>> create an array list to store you objects.
 //       ln #20...    Don't forget to declair the object store'
