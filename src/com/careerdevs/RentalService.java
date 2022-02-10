@@ -1,6 +1,5 @@
 package com.careerdevs;
 
-
 public class RentalService {
     public static void main(String[] args) {
             System.out.println("Welcome to Bill's Car Rental Program");
@@ -9,7 +8,7 @@ public class RentalService {
     Car car1 = new Car("Honda", "Accord");
     Car car2 = new Car("Chevy", "Cruze");
     Car car3 = new Car("Toyota","Corolla");
-    // System.out.println(car1.getMake()); // test getter
+
 
         carStor[0] = car1;
         carStor[1] = car2;
@@ -22,9 +21,7 @@ public class RentalService {
         System.out.println("Available Cars");
         //int listNumber = 1; >>>>>Good use of a counter for sequentially numbering the list. But, it removes the index.
         for (int i = 0; i < carStor.length; i++) {
-//            if (!carStor[i].isRented())  //freeken cool use of the Not operator here.
-//            System.out.println( "(" + listNumber + ") "  + carStor[i].getMake()+ " " + carStor[i].getModel());
-//            listNumber++;
+
             String carStatus;
           if (!carStor[i].isRented()) {
               carStatus = "Available";
@@ -36,35 +33,11 @@ public class RentalService {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//
+//       ln #11...    System.out.println(car1.getMake()); // test getter
+//       ln #23...     if (!carStor[i].isRented())  //freeken cool use of the Not operator here.
+//            System.out.println( "(" + listNumber + ") "  + carStor[i].getMake()+ " " + carStor[i].getModel());
+//            listNumber++;
+// ---------------------old use of Scanner
 // System.out.println("Welcome to the Car Rental CLI.");
 //
 //         Scanner scanner = new Scanner(System.in);
