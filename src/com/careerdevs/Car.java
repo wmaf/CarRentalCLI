@@ -27,6 +27,17 @@ public class Car {
     public void setRented(boolean rented) {
         isRented = rented;
     }
+
+
+    //pt  gets public to string.
+    @Override
+    public String toString() {
+        return "Car{" +
+                "carMake='" + carMake + '\'' +
+                ", carModel='" + carModel + '\'' +
+                ", isRented=" + isRented +
+                '}';
+    }
 }
 
 
