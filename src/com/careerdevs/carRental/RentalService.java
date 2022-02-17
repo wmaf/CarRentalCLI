@@ -5,13 +5,10 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class RentalService {
-
     private static ArrayList<Car> carStorage;
     public static void main(String[] args) {
         initializeCarStorage();
         //carStorage.get(0).setRented(true);  //test/set  boolean    to true/false
-
-
         mainMenu();
     }
 
@@ -27,9 +24,11 @@ public class RentalService {
 
     private static void mainMenu() {
         System.out.println("\nRENTAL MENU\n");
+        int listNumber = 1;
         for (int i = 0; i < carStorage.size(); i++) {
             if ( !carStorage.get(i).isRented() ) {
-                System.out.println(i+1 +") " + carStorage.get(i).getName());  //may have an issue here
+                System.out.println(listNumber + ") " + carStorage.get(i).getName());  //may have an issue here
+                listNumber ++;
             }
         }
     }
@@ -38,12 +37,13 @@ public class RentalService {
 
         carStorage = new ArrayList<>();
 
-        Car car1 = new Car("Honda", "Accord");
-        Car car2 = new Car("Chevy", "Cruze");
-        Car car3 = new Car("Toyota","Corolla");
-        Car car4 = new Car("Chevy", "Volt");
-        Car car5 = new Car("Toyota","Rav4");
-        Car car6 = new Car("Chevy", "Camaro");
+
+        Car car1 = new Car("Honda", "Accord",1);
+        Car car2 = new Car("Chevy", "Cruze",2);
+        Car car3 = new Car("Toyota","Corolla",3);
+        Car car4 = new Car("Chevy", "Volt",4);
+        Car car5 = new Car("Toyota","Rav4",5);
+        Car car6 = new Car("Chevy", "Camaro",6);
 
         carStorage.addAll(List.of(new Car[]{car1,car2,car3,car4,car5,car6}));
 

@@ -3,12 +3,14 @@ package com.careerdevs.carRental;
 public class Car {
     private String carMake;
     private String carModel;
+    private int idNumber;
     private boolean isRented;
 
-    public Car (String carMake, String carModel) {
+    public Car (String carMake, String carModel, int idNumber) {
         this.carMake = carMake;
         this.carModel = carModel;
-        this.isRented = false;
+        this.idNumber = idNumber;
+        this.isRented = false;;
 
     }
 
@@ -19,6 +21,8 @@ public class Car {
     public String getcarModel() {
         return carModel;
     }
+
+    public int getIdNumber(){return idNumber; }
 
     public boolean isRented() {
         return isRented;
@@ -33,11 +37,13 @@ public class Car {
 
 
     //pt  gets public to string.
+
     @Override
     public String toString() {
         return "Car{" +
                 "carMake='" + carMake + '\'' +
                 ", carModel='" + carModel + '\'' +
+                ", idNumber=" + idNumber +
                 ", isRented=" + isRented +
                 '}';
     }
