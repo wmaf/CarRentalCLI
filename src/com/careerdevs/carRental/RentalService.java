@@ -1,4 +1,4 @@
-package com.careerdevs;
+package com.careerdevs.carRental;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,10 +9,10 @@ public class RentalService {
     private static ArrayList<Car> carStorage;
     public static void main(String[] args) {
         initializeCarStorage();
-        carStorage.get(0).setRented(true);
-        carStorage.get(3).setRented(true);
+        //carStorage.get(0).setRented(true);
+        //carStorage.get(3).setRented(true);
 
-        rentalMenu();
+        mainMenu();
     }
 
 
@@ -23,7 +23,13 @@ public class RentalService {
         return null;
 }
 
-    private static void rentalMenu() {
+    private static void mainMenu() {
+        System.out.println("\nRENTAL MENU\n");
+        for (int i = 0; i < carStorage.size(); i++) {
+            if ( !carStorage.get(i).isRented() ) {
+                System.out.println(i+1);  //may have an issue here
+            }
+        }
     }
 
     private static void initializeCarStorage() {
@@ -33,14 +39,12 @@ public class RentalService {
         Car car1 = new Car("Honda", "Accord");
         Car car2 = new Car("Chevy", "Cruze");
         Car car3 = new Car("Toyota","Corolla");
+        car3.setRented(true);
         Car car4 = new Car("Chevy", "Volt");
         Car car5 = new Car("Toyota","Rav4");
         Car car6 = new Car("Chevy", "Camaro");
 
-        carStorage.addAll(List.of(new Car[]{car1,car2,car3,car4,car5,car6}))
-
-
-
+        carStorage.addAll(List.of(new Car[]{car1,car2,car3,car4,car5,car6}));
 
     }
 }
