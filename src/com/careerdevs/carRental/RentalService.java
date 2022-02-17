@@ -36,7 +36,7 @@ public class RentalService {
     private static void initializeCarStorage() {
 
         carStorage = new ArrayList<>();
-
+//@60:30
 
         Car car1 = new Car("Honda", "Accord",1);
         Car car2 = new Car("Chevy", "Cruze",2);
