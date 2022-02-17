@@ -9,8 +9,8 @@ public class RentalService {
     private static ArrayList<Car> carStorage;
     public static void main(String[] args) {
         initializeCarStorage();
-        //carStorage.get(0).setRented(true);
-        //carStorage.get(3).setRented(true);
+        //carStorage.get(0).setRented(true);  //test/set  boolean    to true/false
+
 
         mainMenu();
     }
@@ -22,6 +22,8 @@ public class RentalService {
     public static ArrayList<Car> getAvailableCars(){
         return null;
 }
+
+
 
     private static void mainMenu() {
         System.out.println("\nRENTAL MENU\n");
@@ -39,7 +41,6 @@ public class RentalService {
         Car car1 = new Car("Honda", "Accord");
         Car car2 = new Car("Chevy", "Cruze");
         Car car3 = new Car("Toyota","Corolla");
-        car3.setRented(true);
         Car car4 = new Car("Chevy", "Volt");
         Car car5 = new Car("Toyota","Rav4");
         Car car6 = new Car("Chevy", "Camaro");
