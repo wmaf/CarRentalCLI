@@ -29,7 +29,7 @@ public class RentalService {
         System.out.println("\nRENTAL MENU\n");
         for (int i = 0; i < carStorage.size(); i++) {
             if ( !carStorage.get(i).isRented() ) {
-                System.out.println(i+1);  //may have an issue here
+                System.out.println(i+1 +") " + carStorage.get(i).getName());  //may have an issue here
             }
         }
     }

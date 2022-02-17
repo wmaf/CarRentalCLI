@@ -27,6 +27,9 @@ public class Car {
     public void setRented(boolean rented) {
         isRented = rented;
     }
+    public String getName() {
+        return carMake + " " + carModel;
+    }
 
 
     //pt  gets public to string.
